@@ -49,10 +49,10 @@ export default function RootLayout({
         <h1 style={{ color: 'rgba(78, 65, 163, 0.75)', marginTop: 50, fontSize: 50, justifySelf: "center", fontFamily: "Times New Roman" }}>Donielle Haughton Realty</h1>
 
         <div style={{ display: "flex", flexDirection: "row", justifySelf: "center", marginTop: 50, marginBottom: 50 }}>
-          <a href="/" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>HOME</a>
-          <a href="/about" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>ABOUT ME</a>
-          <a href="/search" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>SEARCH</a>
-          <a href="/contact" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>CONTACT ME</a>
+          <Link href="/" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>HOME</Link>
+          <Link href="/about" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>ABOUT ME</Link>
+          <Link href="/search" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>SEARCH</Link>
+          <Link href="/contact" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>CONTACT ME</Link>
  
         </div>
 
