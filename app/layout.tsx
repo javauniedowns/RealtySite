@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from 'next/link';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,8 +25,44 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ backgroundColor: 'white' }}>
+
+        <div style={{ display: 'flex', justifyContent: "center", alignItems: 'center', backgroundColor: 'rgba(235, 235, 235, 0.9)', width: '100%', justifyItems: "center", height: '80px' }}>
+
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: "space-between", width: "100%", paddingInline: 200 }}>
+
+            <div style={{ display: 'flex', flexDirection: 'row' }}>
+              <img style={{ width: 30, height: 30, marginRight: 10 }} src="/phone-504.png"></img>
+              <p style={{ color: "black", fontSize: "170%", fontWeight:'lighter' }}>302 722-5444</p>
+            </div>
+
+            <div>
+              <img style={{ width: 30, marginRight: 20 }} src="/twitter.png"></img>
+              <img style={{ width: 30 }} src="/instagram-logo-8869.png"></img>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <h1 style={{ color: 'rgba(78, 65, 163, 0.75)', marginTop: 50, fontSize: 50, justifySelf: "center", fontFamily: "Times New Roman" }}>Donielle Haughton Realty</h1>
+
+        <div style={{ display: "flex", flexDirection: "row", justifySelf: "center", marginTop: 50, marginBottom: 50 }}>
+          <a href="/" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>HOME</a>
+          <a href="/about" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>ABOUT ME</a>
+          <a href="/search" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>SEARCH</a>
+          <a href="/contact" style={{ color: 'black', fontSize: 20, paddingInline: 10 }}>CONTACT ME</a>
+ 
+        </div>
+
         {children}
+
+        <div style={{ display: 'flex', justifyContent: "center", alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.69)', width: '100%', justifyItems: "center", height: '80px', marginTop: 150 }}>
+
+          <p style={{ color: 'white' }}>© 2025 Donielle Haughton Realty – All Rights Reserved</p>
+
+        </div>
       </body>
     </html>
   );
